@@ -1,0 +1,394 @@
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	/* padding: 8px; */
+	box-sizing: border-box;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+		Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+main.open {
+	color: #171718;
+	background-color: #fff;
+	.appbar {
+		background-color: #fff;
+	}
+	.logo-svg {
+		fill: #171718;
+	}
+	.market-circle {
+		fill: #21ce99;
+		animation: 1s blink ease infinite;
+	}
+	.asset h1 .symbol,
+	.sep {
+		color: rgba(209, 213, 219, 1);
+	}
+	.select {
+		border-color: #f4f4f5;
+		& + .magnifier,
+		.select-placeholder,
+		.current-type {
+			color: #cbcbcd;
+		}
+	}
+	.select.isOpen,
+	.reco-link:hover .reco-card {
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(48, 51, 51, 0.09);
+		border-color: transparent;
+		& + .magnifier,
+		.select-placeholder,
+		.current-type {
+			color: #171718;
+		}
+	}
+	.search-result.selected,
+	.search-result:hover,
+	.search-result:focus {
+		background-color: #fafafa;
+	}
+	.select-menu {
+		background-color: #fff;
+		h4 {
+			color: #cbcbcd;
+		}
+	}
+	.chart-selector,
+	.about-header,
+	.reco-card {
+		border-color: #f4f4f5;
+	}
+	.reco-card,
+	.ratings-pct > span {
+		background-color: #fff;
+	}
+	// .reco-link:hover .reco-card {
+	// 	border-color: #fafafa;
+	// 	background-color: #fafafa;
+	// }
+	.reco-name,
+	.ticker-date,
+	.date-label,
+	.stock-classification {
+		color: #cbcbcd;
+	}
+	.prev-close {
+		stroke: #171718;
+	}
+	.chart-vline {
+		stroke: #cbcbcd;
+	}
+	.chart-dot {
+		stroke: #fff;
+	}
+	.ratings-pct:after {
+		background: linear-gradient(to right, #fff, transparent);
+	}
+	.ratings-bar-bg {
+		background-color: #f4f4f5;
+		.ratings-bar-fill {
+			background-color: #171718;
+		}
+	}
+	&.up {
+		.ratings-circle,
+		.buy .ratings-bar-bg {
+			background-color: #e6f9f3;
+		}
+	}
+	&.down {
+		.ratings-circle,
+		.buy .ratings-bar-bg {
+			background-color: #fff5f3;
+		}
+	}
+	.popover {
+		background-color: #fff;
+		border-color: #f4f4f5;
+		box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6), 0px -12px 24px rgba(0, 0, 0, 0.2);
+		header {
+			border-color: #f4f4f5;
+		}
+		button {
+			color: #fff;
+		}
+	}
+}
+
+main.closed {
+	color: #fff;
+	background-color: #1b1b1d;
+	.appbar {
+		background-color: #1b1b1d;
+	}
+	.logo-svg {
+		fill: #fff;
+	}
+	.market-circle {
+		fill: #f45531;
+	}
+	.asset h1 .symbol,
+	.sep {
+		color: rgba(107, 114, 128, 1);
+	}
+	.select {
+		border-color: #0e0d0d;
+		& + .magnifier,
+		.select-placeholder,
+		.current-type {
+			color: #8c8c8e;
+		}
+	}
+	.select.isOpen,
+	.reco-link:hover .reco-card {
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+		border-color: transparent;
+		& + .magnifier,
+		.select-placeholder,
+		.current-type {
+			color: #fff;
+		}
+	}
+	.search-result.selected,
+	.search-result:hover,
+	.search-result:focus {
+		background-color: #171718;
+	}
+	.select-menu {
+		background-color: #1b1b1d;
+		h4 {
+			color: #8c8c8e;
+		}
+	}
+	.chart-selector,
+	.about-header,
+	.reco-card {
+		border-color: #0e0d0d;
+	}
+	.reco-card,
+	.ratings-pct > span {
+		background-color: #1b1b1d;
+	}
+	// .reco-link:hover .reco-card {
+	// 	border-color: #171718;
+	// 	background-color: #171718;
+	// }
+	.reco-name,
+	.ticker-date,
+	.date-label,
+	.stock-classification {
+		color: #8c8c8e;
+	}
+	.prev-close {
+		stroke: #cbcbcd;
+	}
+	.chart-vline {
+		stroke: #8c8c8e;
+	}
+	.chart-dot {
+		stroke: #1b1b1d;
+	}
+	.ratings-pct:after {
+		background: linear-gradient(to right, #1b1b1d, transparent);
+	}
+	.ratings-bar-bg {
+		background-color: #0e0d0d;
+		.ratings-bar-fill {
+			background-color: #fff;
+		}
+	}
+	&.up {
+		.ratings-circle,
+		.buy .ratings-bar-bg {
+			background-color: #182b27;
+		}
+	}
+	&.down {
+		.ratings-circle,
+		.buy .ratings-bar-bg {
+			background-color: #2d201f;
+		}
+	}
+	.popover {
+		background-color: #1b1b1d;
+		border-color: #0e0d0d;
+		box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6), 0px -12px 24px rgba(0, 0, 0, 0.2);
+		header {
+			border-color: #0e0d0d;
+		}
+		button {
+			color: #1b1b1d;
+		}
+	}
+}
+
+main.up {
+	.search-result.selected,
+	.search-result:hover,
+	.search-result:focus {
+		border-left: 3px solid #21ce99;
+	}
+	a.colored {
+		color: #21ce99;
+		&:hover {
+			color: #1ae9aa;
+		}
+	}
+	a.logo:hover .logo-svg {
+		fill: #1ae9aa;
+	}
+	span.highlight,
+	span.read-more,
+	.ratings-circle,
+	.buy .ratings-label,
+	.buy .ratings-pct > span {
+		color: #21ce99;
+	}
+	.chart-selector {
+		span:hover {
+			color: #21ce99;
+		}
+		span.selected {
+			color: #21ce99;
+			border-color: #21ce99;
+		}
+	}
+	.price-chart {
+		stroke: #21ce99;
+	}
+	.chart-dot {
+		fill: #21ce99;
+	}
+	.buy .ratings-bar-fill {
+		background-color: #21ce99;
+	}
+	.popover button {
+		background-color: #21ce99;
+		border-color: #21ce99;
+		&:hover {
+			background-color: #1ae9aa;
+			border-color: #1ae9aa;
+		}
+	}
+}
+
+main.down {
+	.search-result.selected,
+	.search-result:hover,
+	.search-result:focus {
+		border-left: 3px solid #f45531;
+	}
+	a.colored {
+		color: #f45531;
+		&:hover {
+			color: #ff6340;
+		}
+	}
+	a.logo:hover .logo-svg {
+		fill: #ff6340;
+	}
+	span.highlight,
+	span.read-more,
+	.ratings-circle,
+	.buy .ratings-label,
+	.buy .ratings-pct > span {
+		color: #f45531;
+	}
+	.chart-selector {
+		span:hover {
+			color: #f45531;
+		}
+		span.selected {
+			color: #f45531;
+			border-color: #f45531;
+		}
+	}
+	.price-chart {
+		stroke: #f45531;
+	}
+	.chart-dot {
+		fill: #f45531;
+	}
+	.buy .ratings-bar-fill {
+		background-color: #f45531;
+	}
+	.popover button {
+		background-color: #f45531;
+		border-color: #f45531;
+		&:hover {
+			background-color: #ff6340;
+			border-color: #ff6340;
+		}
+	}
+}
+
+a {
+	color: rgb(0, 100, 200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0, 80, 160);
+}
+
+label {
+	display: block;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+input[type='range'] {
+	height: 0;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+@keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}

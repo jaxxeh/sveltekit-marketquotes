@@ -2,18 +2,18 @@
 
 This project is meant as:
 
-- a showcase for its accompanying GraphQL project, [yahoo-finance-graphql]()
-- an example of a working [SvelteKit]() app
-- an example of making SvelteKit and [TailwindCSS]() work together
-- an example of configuring and using [urql]() as a GraphQL client for standard queries (using standard HTTP/S) and subscriptions (using web sockets transport)
-- an example of using [d3]() to display interactive, custom data charts
+- a showcase for its accompanying GraphQL project, [yahoo-finance-graphql](https://github.com/jaxxeh/yahoo-finance-graphql)
+- an example of a working [SvelteKit](https://kit.svelte.dev/) app
+- an example of making SvelteKit and [TailwindCSS](https://tailwindcss.com/) work together
+- an example of configuring and using [urql](https://formidable.com/open-source/urql/) as a GraphQL client for standard queries (using standard HTTP/S) and subscriptions (using web sockets transport)
+- an example of using [d3](https://d3js.org/) to display interactive, custom data charts
 - a showcase for an animated price-ticker component, with rolling/flashing digits
 
 > DISCLAIMER: this project is meant for testing and educational purposes ONLY.
 
 ## Getting started
 
-> Please make sure you have installed and started the accompanying [yahoo-finance-graphql]() project _before_ starting this one!
+> Please make sure you have installed and started the accompanying [yahoo-finance-graphql](https://github.com/jaxxeh/yahoo-finance-graphql) project _before_ starting this one!
 
 Clone this project locally, cd into the cloned project, then run:
 

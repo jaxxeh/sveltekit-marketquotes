@@ -25,7 +25,7 @@ npm run dev
 
 By default, the project should then be available at [http://localhost:3000](http://localhost:3000).
 
-If the app is displayed on a dark background, U.S. Markets are closed, if displayed on a light background, U.S. Markets are open (9:30 AM to 4:00 PM weekdays only, excluding national/bank holidays).
+If the app is displayed on a dark background, U.S. Markets are closed, if displayed on a light background, U.S. Markets are open (9:30 AM to 4:00 PM EST weekdays only, excluding national/bank holidays).
 
 ## Searching for and displaying an asset/quote
 
